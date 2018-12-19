@@ -39,7 +39,7 @@ public class HibernateConfig {
 
 		// jdbc driver 설정을 한다.
 		try {
-			myDataSource.setDriverClass("com.mysql.jdbc.Driver");		
+			myDataSource.setDriverClass(env.getProperty("jdbc.driver"));		
 		}
 		catch (PropertyVetoException exc) {
 			throw new RuntimeException(exc);

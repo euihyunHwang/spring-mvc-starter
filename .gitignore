@@ -24,3 +24,10 @@ hs_err_pid*
 
 #target folder
 target/* 
+/target/
+
+#properties file
+*.properties
+
+src/main/resources/*
+
